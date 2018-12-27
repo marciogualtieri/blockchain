@@ -1,6 +1,6 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [Blockchain Multi-signature in GO](#blockchain-multi-signature-in-go)
+- [Blockchain Multi-signature in Go](#blockchain-multi-signature-in-go)
 	- [Overview](#overview)
 	- [Design](#design)
 	- [Installing Dependencies](#installing-dependencies)
@@ -8,7 +8,7 @@
 
 <!-- /TOC -->
 
-# Blockchain Multi-signature in GO
+# Blockchain Multi-signature in Go
 
 ## Overview
 
