@@ -53,43 +53,43 @@ The following command will install all project package dependencies:
 
 To run all tests, execute the following command:
 
-  $ go test -v ./...
+    $ go test -v ./...
 
 You should get an output similar to the following:
 
-  === RUN   TestBitArrayToByteArray
-  --- PASS: TestBitArrayToByteArray (0.00s)
-  PASS
-  ok  	blockchain/utils/collection	0.005s
-  === RUN   TestGenerateKeys
-  --- PASS: TestGenerateKeys (0.00s)
-  === RUN   TestAggregatePublicKeys
-  --- PASS: TestAggregatePublicKeys (0.00s)
-  === RUN   TestCombineSignatures
-  --- PASS: TestCombineSignatures (0.00s)
-  === RUN   TestVerifySingleSignature
-  --- PASS: TestVerifySingleSignature (0.00s)
-  === RUN   TestVerifyMultiplePartialSignature
-  --- PASS: TestVerifyMultiplePartialSignature (0.00s)
-  PASS
-  ok  	blockchain/utils/crypto	0.124s
-  === RUN   TestNumForConsensus
-  --- PASS: TestNumForConsensus (0.00s)
-  PASS
-  ok  	blockchain/utils/network	0.100s
-  === RUN   TestTXBlockHeaderSerializationWithValidObject
-  --- PASS: TestTXBlockHeaderSerializationWithValidObject (0.00s)
-  === RUN   TestTXBlockHeaderSerializationWithCorruptObject
-  --- PASS: TestTXBlockHeaderSerializationWithCorruptObject (0.00s)
-  PASS
-  ok  	blockchain/zilliqa/block	0.109s
-  === RUN   TestVerifyFinalBlockConsensusSignature
-  --- PASS: TestVerifyFinalBlockConsensusSignature (0.00s)
-  === RUN   TestVerifyFinalBlockConsensusSignatureNotEnoughVotes
-  --- PASS: TestVerifyFinalBlockConsensusSignatureNotEnoughVotes (0.00s)
-  === RUN   TestVerifyFinalBlockConsensusSignatureCorruptSignature
-  --- PASS: TestVerifyFinalBlockConsensusSignatureCorruptSignature (0.00s)
-  === RUN   TestVerifyFinalBlockConsensusSignatureCorruptSignatureMap
-  --- PASS: TestVerifyFinalBlockConsensusSignatureCorruptSignatureMap (0.00s)
-  PASS
-  ok  	blockchain/zilliqa/node	0.082s
+    === RUN   TestBitArrayToByteArray
+    --- PASS: TestBitArrayToByteArray (0.00s)
+    PASS
+    ok  	blockchain/utils/collection	0.005s
+    === RUN   TestGenerateKeys
+    --- PASS: TestGenerateKeys (0.00s)
+    === RUN   TestAggregatePublicKeys
+    --- PASS: TestAggregatePublicKeys (0.00s)
+    === RUN   TestCombineSignatures
+    --- PASS: TestCombineSignatures (0.00s)
+    === RUN   TestVerifySingleSignature
+    --- PASS: TestVerifySingleSignature (0.00s)
+    === RUN   TestVerifyMultiplePartialSignature
+    --- PASS: TestVerifyMultiplePartialSignature (0.00s)
+    PASS
+    ok  	blockchain/utils/crypto	0.124s
+    === RUN   TestNumForConsensus
+    --- PASS: TestNumForConsensus (0.00s)
+    PASS
+    ok  	blockchain/utils/network	0.100s
+    === RUN   TestTXBlockHeaderSerializationWithValidObject
+    --- PASS: TestTXBlockHeaderSerializationWithValidObject (0.00s)
+    === RUN   TestTXBlockHeaderSerializationWithCorruptObject
+    --- PASS: TestTXBlockHeaderSerializationWithCorruptObject (0.00s)
+    PASS
+    ok  	blockchain/zilliqa/block	0.109s
+    === RUN   TestVerifyFinalBlockConsensusSignature
+    --- PASS: TestVerifyFinalBlockConsensusSignature (0.00s)
+    === RUN   TestVerifyFinalBlockConsensusSignatureNotEnoughVotes
+    --- PASS: TestVerifyFinalBlockConsensusSignatureNotEnoughVotes (0.00s)
+    === RUN   TestVerifyFinalBlockConsensusSignatureCorruptSignature
+    --- PASS: TestVerifyFinalBlockConsensusSignatureCorruptSignature (0.00s)
+    === RUN   TestVerifyFinalBlockConsensusSignatureCorruptSignatureMap
+    --- PASS: TestVerifyFinalBlockConsensusSignatureCorruptSignatureMap (0.00s)
+    PASS
+    ok  	blockchain/zilliqa/node	0.082s
