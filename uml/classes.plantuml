@@ -33,7 +33,6 @@ class TXBlockHeader {
 }
 
 Node *-- TXBlock
-TXBlock *-- UpdateCache
 TXBlock *-- TXBlockHeader
 TXBlockHeader *-- TXBlockHashSet
 @enduml
