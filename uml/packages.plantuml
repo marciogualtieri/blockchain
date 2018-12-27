@@ -1,0 +1,31 @@
+@startuml
+folder blockchain {
+  folder utils {
+      artifact collection
+        note bottom
+          Collection helper functions.
+          (bit array)
+        end note
+      artifact crypto
+        note bottom
+          Cryptographic helper functions.
+          (Schnorr multisignature)
+        end note
+      artifact network
+        note bottom
+          Network elements.
+          (Peers, DS Committee)
+        end note
+  }
+  folder zilliqa {
+      artifact block
+        note bottom
+          TX-Block helper functions.
+        end note
+      artifact node
+        note bottom
+          Node helper functions.
+        end note
+  }
+}
+@enduml

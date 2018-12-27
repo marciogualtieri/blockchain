@@ -1,0 +1,39 @@
+@startuml
+class Node {
+    -mediator network.Mediator
+    +(bool, error) VerifyFinalBlockConsensusSignature(block.TXBlock txBlock)
+}
+
+class TXBlock {
+	+bitarray.BitArray ConsensusSignatureMap1stRound
+	+bitarray.BitArray ConsensusSignatureMap2ndRound
+	+[]byte ConsensusSignature1stRound
+	+[]byte ConsensusSignature2ndRound
+	+TXBlockHeader Header
+}
+
+class TXBlockHashSet {
+	+[]byte MerkleRootHash
+	+[]byte StateDeltaHash
+	+[]byte MicroBlocksInfoHash
+}
+
+class TXBlockHeader {
+	+uint8 BlockType
+	+uint32 Version
+	+uint64 GasLimit
+	+uint64RewardsHigh
+	+uint64RewardsLow
+	+[]byte PreviousHash
+	+uint64 BlockNum
+	+TXBlockHashSetHashSet
+	+uint32 NumTXs
+	+[]byte MinerPublicKey
+	+uint64 DSBlockNum
+}
+
+Node *-- TXBlock
+TXBlock *-- UpdateCache
+TXBlock *-- TXBlockHeader
+TXBlockHeader *-- TXBlockHashSet
+@enduml
