@@ -12,11 +12,11 @@ In this particular blockchain, an elected dynamic group of nodes (a shard of nod
 
 For a complete description of sharding and consensus in Zilliqa, refer to [the white paper](https://docs.zilliqa.com/whitepaper.pdf). For a general overview on Zilliqa's sharding, you may refer to the following blog articles:
 
-- (The Zilliqa Design Story Piece by Piece: Part 1 (Network Sharding))[https://blog.zilliqa.com/https-blog-zilliqa-com-the-zilliqa-design-story-piece-by-piece-part1-d9cb32ea1e65]
+- (The Zilliqa Design Story Piece by Piece: Part 1, Network Sharding)[https://blog.zilliqa.com/https-blog-zilliqa-com-the-zilliqa-design-story-piece-by-piece-part1-d9cb32ea1e65]
 
-- (The Zilliqa Design Story Piece by Piece: Part 2 (Consensus Protocol))[https://blog.zilliqa.com/the-zilliqa-design-story-piece-by-piece-part-2-consensus-protocol-e38f6bf566e3]
+- (The Zilliqa Design Story Piece by Piece: Part 2, Consensus Protocol)[https://blog.zilliqa.com/the-zilliqa-design-story-piece-by-piece-part-2-consensus-protocol-e38f6bf566e3]
 
-- (The Zilliqa Design Story Piece by Piece: Part 3 (Making Consensus Efficient))[https://blog.zilliqa.com/the-zilliqa-design-story-piece-by-piece-part-3-making-consensus-efficient-7a9c569a8f0e]
+- (The Zilliqa Design Story Piece by Piece: Part 3, Making Consensus Efficient)[https://blog.zilliqa.com/the-zilliqa-design-story-piece-by-piece-part-3-making-consensus-efficient-7a9c569a8f0e]
 
 
 For a an overview of Zilliqa's blockchain current functionalities, you may refer to [this article](https://www.coinbureau.com/review/zilliqa-zil/).
