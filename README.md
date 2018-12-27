@@ -1,16 +1,26 @@
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Blockchain Multisignature (Zilliqa's approach) in golang](#blockchain-multisignature-zilliqas-approach-in-golang)
+	- [Overview](#overview)
+	- [Design](#design)
+	- [Installing Dependencies](#installing-dependencies)
+	- [Running Tests](#running-tests)
+
+<!-- /TOC -->
+
 # Blockchain Multisignature (Zilliqa's approach) in golang
 
 ## Overview
 
-The purpose of this project is to showcase my knowledge of blockchain technologies through the implementation of a multisignature consensus scheme in the [Go language](https://golang.org/) (thus, it additionally serves the purpose of showcasing my OOP programming skills in this language).
+The purpose of this project is to showcase my knowledge of blockchain through the implementation of a multisignature consensus scheme in [Go](https://golang.org/) (thus, additionally serves the purpose of showcasing my OOP programming skills in this language).
 
-Specifically, I'm implementing the multisignature consensus scheme used by [Zilliqa](https://zilliqa.com/)'s blockchain.
+Specifically, I'm implementing the multi-signature consensus scheme used by [Zilliqa](https://zilliqa.com/)'s blockchain.
 
-Zilliqa's blockchain implements sharding to solve the escalability issue found in other current blockchains, such as [Etherium](https://www.ethereum.org/) and [BitCoin](https://bitcoin.org/en/).
+Zilliqa's blockchain uses sharding to solve the escalability issue found in other current blockchains, such as [Etherium](https://www.ethereum.org/) and [BitCoin](https://bitcoin.org/en/).
 
-In this particular blockchain, an elected dynamic group of nodes (a shard of nodes, named the "DS Committee") should reach an agreement about if a block should or shouldn't be added to the blockchain. The committee members vote and produce a bit map of signatures, which is validated using a [Schnoor multisignature scheme](https://medium.com/@blairlmarshall/signature-verification-multi-signatures-19886fafe97b).
+In this particular blockchain, an elected dynamic group of nodes (a shard of nodes, named the "DS Committee") should reach an agreement about a block being or not eligible be added to the blockchain. The committee entrusted members vote and produce a bit map of signatures, which is signed using a [Schnorr multi-signature scheme](https://medium.com/@blairlmarshall/signature-verification-multi-signatures-19886fafe97b).
 
-For a complete description of sharding and consensus in Zilliqa, refer to [the white paper](https://docs.zilliqa.com/whitepaper.pdf). For a general overview on Zilliqa's sharding, you may refer to the following blog articles:
+For a complete description of sharding and consensus in Zilliqa, refer to [their white paper](https://docs.zilliqa.com/whitepaper.pdf). For a general overview on Zilliqa's sharding, the following blog articles might be useful:
 
 - (The Zilliqa Design Story Piece by Piece: Part 1, Network Sharding)[https://blog.zilliqa.com/https-blog-zilliqa-com-the-zilliqa-design-story-piece-by-piece-part1-d9cb32ea1e65]
 
@@ -23,17 +33,17 @@ For a an overview of Zilliqa's blockchain current functionalities, you may refer
 
 ## Design
 
-I'm implementing specifically the 2nd round consensus verification, that is, the following Go function:
+I'm specifically implementing the 2nd round consensus verification on the final TX-Block, that is, the following Go function:
 
     func (node Node) VerifyFinalBlockConsensusSignature(txBlock block.TXBlock) (bool, error) { ... }
 
-This function receives a final block and validates its signature map using a Schnorr multisignature scheme.
+This function receives a final block and validates its signature map using the Schnorr multi-signature scheme.
 
-It's based on the following C++ function from Zalliqa's [source code](https://github.com/Zilliqa/Zilliqa/tree/master/src/libNode):
+It's based on the following C++ function from [Zalliqa's source code](https://github.com/Zilliqa/Zilliqa/tree/master/src/libNode):
 
     bool Node::VerifyFinalBlockCoSignature(const TxBlock& txblock) { ... }
 
-The implementation also includes all supporting code, including the supporting code necessary for testing.
+My implementation also includes all supporting code, including supporting code necessary for testing.
 
 The following UML diagrams shows the classes (Golang's receivers) implemented in the code:
 
