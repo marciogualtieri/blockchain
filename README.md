@@ -12,7 +12,7 @@
 
 ## Overview
 
-The purpose of this project is to showcase my knowledge of blockchain through the implementation of a multi-signature consensus scheme in [Go](https://golang.org/) (thus, additionally serves the purpose of showcasing my OOP programming skills in this language).
+The purpose of this project is to showcase my knowledge of blockchain through the implementation of a multi-signature consensus scheme in [Go](https://golang.org/) (thus, additionally, it serves the purpose of showcasing my OOP programming skills in this language).
 
 Specifically, I'm implementing the multi-signature consensus scheme used by [Zilliqa](https://zilliqa.com/)'s blockchain.
 
