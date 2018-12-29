@@ -4,17 +4,17 @@ folder blockchain {
       artifact collection
         note bottom
           Collection helper functions.
-          (bit array)
+          (for bit array at the moment)
         end note
       artifact crypto
         note bottom
           Cryptographic helper functions.
-          (Schnorr multisignature)
+          (for the Schnorr's multi-signature)
         end note
       artifact network
         note bottom
           Network elements.
-          (Peers, DS Committee)
+          (for network peers, DS Committee, etc)
         end note
   }
   folder zilliqa {

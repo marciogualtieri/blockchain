@@ -11,7 +11,7 @@ func TestGenerateKeys(t *testing.T) {
 	assert.Equal(t, 33, cap(publicKey))
 }
 
-func TestAggregatePublicKeys(t *testing.T) {
+func TestCombinePublicKeys(t *testing.T) {
 	keys := [][]byte{TestPublicKey1, TestPublicKey2, TestPublicKey3}
 	aggregate, err := CombinePublicKeys(keys)
 	assert.Nil(t, err)
