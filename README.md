@@ -41,7 +41,7 @@ You will find this function inside the package `blockchain/zilliqa/node`.
 
 This function receives a final block and validates its signature map using the Schnorr multi-signature scheme.
 
-It's based on the following C++ function from [Zalliqa's source code](https://github.com/Zilliqa/Zilliqa/tree/master/src/libNode):
+It's based on the following C++ function from [Zilliqa's source code](https://github.com/Zilliqa/Zilliqa/tree/master/src/libNode):
 
     bool Node::VerifyFinalBlockCoSignature(const TxBlock& txblock) { ... }
 
